@@ -1,0 +1,332 @@
+@import "../../assets/fontawesome/css/fontawesome.css";
+@import "../../assets/fontawesome/css/duotone.css";
+@import "../../assets/fontawesome/css/solid.css";
+@import "../../assets/fontawesome/css/brands.css";
+@import "../../assets/fontawesome/css/sharp-solid.css";
+
+@font-face {
+    font-family: BeVietNam;
+    src: url('../Be_Vietnam_Pro/BeVietnamPro-Light.ttf');
+}
+
+:root {
+    --primary-color: #ED6237;
+    --bs-orange-rgb: #ED6237;
+}
+
+* {
+    font-family: BeVietNam;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+ul {
+    padding-left: 15px;
+}
+p img {
+    width: 100%;
+}
+form {
+    position: relative;
+}
+@media (min-width: 768px) {
+    #sidebar-left.sidebar-left-right {
+        width: 20%;
+    }
+
+    body .col-12.col-md-9.main-sec-content {
+        width: 80%;
+    }
+
+    body .col-12.col-md-6.main-content {
+        width: 60%;
+    }
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.text-color-primary {
+    color: var(--primary-color);
+}
+.border-orange{
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-orange-rgb),var(--bs-border-opacity))!important;
+}
+/* jobs */
+.wrap-control-tab {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.wrap-control-tab::-webkit-scrollbar {
+    height: 5px;
+    /* Chiều cao của thanh cuộn */
+}
+
+.wrap-control-tab::-webkit-scrollbar-track {
+    background: #e9e9e9;
+    /* Màu nền của thanh cuộn */
+}
+
+.wrap-control-tab::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    /* Màu của thanh cuộn */
+    border-radius: 5px;
+    /* Bo góc cho thanh cuộn */
+}
+
+.job-status-nav-tabs {
+    width: fit-content;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.job-status-nav-tabs .nav-item {
+    width: max-content;
+    padding-inline: 5px;
+}
+
+.job-status-nav-tabs .nav-item.active {
+    color: var(--primary-color);
+}
+
+/* job step */
+.steps-vertical {
+    --tblr-steps-dot-offset: 6px;
+    flex-direction: column;
+}
+
+.steps-vertical.steps-counter {
+    --tblr-steps-dot-offset: -2px;
+}
+
+.steps-counter {
+    --tblr-steps-dot-size: 1.5rem;
+    counter-reset: steps;
+}
+
+.steps-orange {
+    --tblr-steps-color: var(--primary-color);
+}
+
+.steps {
+    --tblr-steps-color: var(--primary-color);
+    --tblr-steps-inactive-color: #909090;
+    --tblr-steps-dot-size: 1.5rem;
+    --tblr-steps-border-width: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.steps-counter .step-item {
+    counter-increment: steps;
+}
+
+.step-item {
+    position: relative;
+    flex: 1 1 0;
+    min-height: 1rem;
+    margin-top: 0;
+    color: inherit;
+    text-align: center;
+    cursor: default;
+    padding-top: calc(var(--tblr-steps-dot-size));
+}
+
+.step-item.active {
+    font-weight: 600;
+}
+
+.steps-counter .step-item:before {
+    content: counter(steps);
+}
+
+.step-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rem;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    width: var(--tblr-steps-dot-size);
+    height: var(--tblr-steps-dot-size);
+}
+
+.step-item:after,
+.step-item:before {
+    background: var(--tblr-steps-color);
+}
+
+.step-item.active:after {
+    background: var(--tblr-steps-inactive-color);
+}
+
+.step-item:not(:last-child):after {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    content: "";
+    transform: translateY(-50%);
+}
+
+.step-item:after {
+    top: calc(var(--tblr-steps-dot-size) * .5);
+    height: var(--tblr-steps-border-width);
+}
+
+.steps-vertical .step-item {
+    text-align: left;
+    padding-top: 0;
+    padding-left: calc(var(--tblr-steps-dot-size) + 1rem);
+    min-height: auto;
+}
+
+.steps-vertical .step-item:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.steps-vertical .step-item:before {
+    top: var(--tblr-steps-dot-offset);
+    left: 0;
+    transform: translate(0, 0);
+}
+
+.steps-vertical .step-item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    transform: translateX(-50%);
+    top: var(--tblr-steps-dot-offset);
+    left: calc(var(--tblr-steps-dot-size) * .5);
+    width: var(--tblr-steps-border-width);
+    height: calc(100% + 1rem);
+}
+
+.step-item.active~.step-item .step-title {
+    color: var(--tblr-steps-inactive-color);
+}
+
+.step-item.active~.step-item:after,
+.step-item.active~.step-item:before {
+    background: var(--tblr-steps-inactive-color);
+}
+.job-note{
+    font-size: 12px;
+}
+.job-note p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.job-status-number{
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address-shop{
+    display: block;
+    display: -webkit-box;
+    max-width: 250px;
+    height: 16px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 768px) {
+    .fs-sm-10 {
+        font-size: 10px;
+    }
+    .d-mobi-none {
+        display: none !important;
+    }
+
+    .mb-mobi {
+        margin-bottom: 10px;
+    }
+
+    .card-body.rounded-top.bg-orange {
+        border-radius: 0px !important;
+    }
+    .fs-sm-15{
+        font-size: 15px;
+    }
+    .address-shop{
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-desktop-none {
+        display: none !important;
+    }
+
+    footer .container {
+        width: 80%;
+    }
+}
+
+.card.border-0.shadow-sm {
+    margin-bottom: 1rem;
+}
+
+
+.price__color {
+    color: rgb(0 139 9);
+}
+
+.stuck-header {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; */
+
+    /* position: fixed;
+    top: -2%;
+    left: 0;
+    width: 100%;
+    z-index: 1; */
+}
+
+
+@media (max-width: 768px) {
+    .stuck-header h3 {
+        font-size: 16px;
+    }
+
+    .stuck-header img {
+        width: 70px;
+        padding-left: 0px;
+    }    
+}

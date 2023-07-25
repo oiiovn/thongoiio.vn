@@ -1,0 +1,13 @@
+{
+    "notifySuccess": "Require successfully.",
+    "notifyFail": "Your request missing parameter.",
+    "notEnoughMoney": "Not enough money.",
+    "transactionCreateJob": "Trừ tiền từ tạo đơn.",
+    "transactionCompleteJob": "Cộng tiền từ hoàn thành đơn.",
+    "transactionCancelJob": "Trừ tiền từ hủy đơn.",
+    "transactionMoneyAdditionJob": "Trừ tiền từ tiền cọc của đơn.",
+    "autoCancelJob": "Tự động hủy đơn do quá thời gian quy định.",
+    "autoCompleteJob": "Tự động hoàn thành đơn do quá thời gian quy định.",
+    "jobHasWorker": "Đơn đã có người nhận",
+    "workerInBlacklist": "Trước đó bạn đã nhận 1 đơn của shop này."
+}

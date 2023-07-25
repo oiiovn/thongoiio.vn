@@ -1,0 +1,147 @@
+.form-control[type="search"] {
+    width: 281px;
+    height: 40px;
+    padding: 8px 12px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+}
+
+.form-control[type="search"]:focus {
+    box-shadow: none;
+}
+
+.btn-orange {
+    background: #ED6237;
+    border: 1px solid #ED6237;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-orange:hover {
+    border: 1px solid #ED6237;
+    color: #ED6237;
+}
+
+.bg-orange {
+    background: #ED6237;
+}
+.btn-orange-outline {
+    background: #fff;
+    border: 1px solid #ED6237;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 2px;
+    color: #ED6237;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-orange-outline:hover {
+    border: 1px solid #ED6237;
+    background: #ED6237;
+    color: #fff;
+}
+.bg-yellow-light {
+    background: #FDF2D7;
+}
+
+.text-orange {
+    color: #ED6237;
+}
+
+.btn-yellow-light {
+    margin: 0;
+    background: #FDF2D7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.bg-success-light {
+    background: #DFF4D6;
+}
+
+.card-option {
+    padding: 10px 6px;
+    line-height: 13px;
+    font-size: 14px;
+}
+
+.card-option:hover, .card-option:hover a, .card-option:hover p, .card-option:hover span{
+    background: #ed6237;
+    color: white;
+}
+
+.card-top-shop {
+    padding: 15px 15px;
+    line-height: 13px;
+    font-size: 14px;
+}
+
+.card-top-shop:hover, .card-top-shop:hover a, .card-top-shop:hover p, .card-top-shop:hover span{
+    background: #ed6237;
+    color: white;
+}
+
+.border-dotted {
+    border-bottom: 0.5px solid;
+    border-bottom-style: dashed;
+}
+
+.blog-avatar {
+    padding: 2px;
+    position: relative;
+    padding-bottom: 69.2%;
+    border-radius: 15px;
+}
+
+.blog-avatar img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+
+.slide-image {
+    position: relative;
+    padding-bottom: 42%;
+}
+
+.slide-image img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.count-reviews {
+    background: #fdf2d7;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 0 !important;
+    float: right;
+}
+
+
+table.table.table-light {
+    font-size: 12px;
+}
+
+table span.btn.btn-orange {
+    padding: 5px !important;
+    font-size: 12px;
+    height: fit-content;
+}
+
+.card-body .order-list {
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+    padding: 5px;
+}

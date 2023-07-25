@@ -1,0 +1,16 @@
+{
+    "notifySuccess": "Thực hiện thành công.",
+    "notifyFail": "Thực hiện không thành công.",
+    "notEnoughMoney": "Số tiền trong ví không đủ.",
+    "transactionCreateJob": "Trừ tiền từ tạo công việc.",
+    "transactionCloneJob": "Trừ tiền từ Sao chép công việc.",
+    "transactionCompleteJob": "Cộng tiền từ hoàn thành công việc.",
+    "transactionCancelJob": "Trừ tiền từ hủy công việc.",
+    "transactionMoneyAdditionJob": "Trừ tiền từ tiền phát sinh của công việc.",
+    "transactionRefunCancelJob": "Hoàn tiền từ hủy công việc.",
+    "autoCancelJob": "Tự động hủy công việc do quá thời gian quy định.",
+    "autoCompleteJob": "Tự động hoàn thành công việc do quá thời gian quy định.",
+    "jobHasWorker": "Công việc đã có người nhận",
+    "workerInBlacklist": "Trước đó bạn đã nhận 1 công việc của shop này.",
+    "jobNotReceive": "Đơn này không thể nhận. Vui lòng tải lại trang"
+}

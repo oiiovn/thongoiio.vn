@@ -1,0 +1,38 @@
+footer {
+    background-color: #252525;
+    position: relative;
+    z-index: 1;
+}
+
+footer a, footer p, footer span {
+    color: white;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* .share-icon {
+    font-size: 19px;
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 5px;
+} */
+
+.share-icon a {
+    color: #ed6237;
+}
+
+.header-icon.nav-link {
+    border: 1px solid #2f3033;
+    border-radius: 99px;
+    padding: 5px 10px;
+    background: white;
+    margin-right: 10px;
+    width: 36px;
+    text-align: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}

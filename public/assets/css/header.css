@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+}
+
+main {
+    background: #E9E9E9;
+}
+
+    /*.border-logo {*/
+    /*    border-radius: 99px;*/
+    /*    padding: 5px 10px;*/
+    /*    margin-top: -8px;*/
+    /*}*/
+
+/* @media (min-width: 768px) {
+    #sidebar-left {
+        height: 700px;
+    }
+
+    #sidebar-left-child {
+        position: fixed;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 17%;
+    }
+
+    .sidebar-right-child {
+        position: fixed;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 17%;
+    }
+
+    #sidebar-left-child::-webkit-scrollbar, .sidebar-right-child::-webkit-scrollbar {
+        width: 0px;
+        background-color: white;
+    }
+
+    #sidebar-left-child::-webkit-scrollbar-thumb, .sidebar-right-child::-webkit-scrollbar-thumb {
+        background-color: #ED6237;
+    }
+
+    #sidebar-left-child::-webkit-scrollbar-track, .sidebar-right-child::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px white;
+        background-color: white;
+    }
+} */
