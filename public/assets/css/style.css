@@ -286,7 +286,7 @@ form {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .d-desktop-none {
         display: none !important;
     }
