@@ -52,9 +52,6 @@
         }
     }
     @media (max-width:600px) {
-        footer{
-            display:none;
-        }
     }
     #sidebar-left-child::-webkit-scrollbar-thumb{
         height:0.5%;
