@@ -1,7 +1,7 @@
-<button style="margin-left: auto;" class="navbar-toggler d-desktop-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile" aria-controls="offcanvasMenuMobile">
+<button style="margin-left: auto;" class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile" aria-controls="offcanvasMenuMobile">
     <span style="width:25px;height:25px;" class="navbar-toggler-icon"></span>
 </button>
-<div class="offcanvas offcanvas-end d-desktop-none" style="width: 70%;" tabindex="-1" id="offcanvasMenuMobile" aria-labelledby="offcanvasMenuMobileLabel">
+<div class="offcanvas offcanvas-end d-desktop-none" style="width: 85%;" tabindex="-1" id="offcanvasMenuMobile" aria-labelledby="offcanvasMenuMobileLabel">
     <div class="offcanvas-header d-mobi-none">
         @if (auth()->check())
         <p class="offcanvas-title" id="offcanvasMenuMobileLabel">
