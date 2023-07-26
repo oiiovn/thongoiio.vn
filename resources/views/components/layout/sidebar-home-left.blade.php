@@ -39,11 +39,18 @@
     .btn-orange:hover {
         background-color: #FFF;
     }
-
-    #ui-basic1 .nav-item {
-        padding: 1.125rem 0 1.125rem 0;
+    #ui-basic .nav-item {
+        padding:10px 0;
         margin-left: 5px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+    #ui-basic .nav-item:hover {
+        color: #E0793F;
+    }
+    #ui-basic1 .nav-item {
+        padding:10px 0;
+        margin-left: 5px;
+        font-size: 13px;
     }
 
     #ui-basic1 .nav-item:hover {
@@ -51,9 +58,9 @@
     }
 
     #ui-basic2 .nav-item {
-        padding: 1.125rem 0 1.125rem 0;
+        padding: 10px 0;
         margin-left: 5px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #ui-basic2 .nav-item:hover {
@@ -67,14 +74,18 @@
     .help:hover {
         color: #E0793F;
     }
-
+    .menu-title-wallet{
+        margin-right: auto;
+        letter-spacing: 1.4px;
+    }
     .menu-title-wallet:hover {
         color: #E0793F;
     }
 
     /* Đã sửa */
     .collapse {
-        padding: 0 20px;
+        padding: 10px 22px;
+        cursor: pointer;
     }
 
     .collapse .nav-item {
@@ -109,9 +120,9 @@
     <x-slot name="header">
         <div class="text-center">
             <li style="border-bottom: 1px solid #CBCBC6;padding-bottom:10px;" class="nav-link">
-                <a class="menu-title-wallet" href="{{route('wallet.show')}}">Ví tiền: {{format_price(auth()->user()->wallet()->value('amount'))}}</a>
-                <a href="{{route('wallet.show')}}" style="border-radius: 100%;background: #E0793F;display: flex;padding: 5px;align-items: flex-start;gap: 10px;margin-left: auto;">
-                    <img src="{{ asset('viewsCustom/assets/images/ic.svg') }}" alt=""></a>
+                <a class="menu-title-wallet" href="{{route('wallet.show')}}">
+                    <img style="margin-right:5px;" src="{{ asset('viewsCustom/assets/images/wallet.svg') }}" alt="">
+                    {{format_price(auth()->user()->wallet()->value('amount'))}}</a>
             </li>
         </div>
     </x-slot>
@@ -128,13 +139,10 @@
         <!-- Footer -->
         <x-slot name="footer">
             <div class="collapse show" id="ui-basic">
-                <!-- <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#">Lên Shopee Mall</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Lên Lazada Mall</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Mở thông tin khách hàng Shopee</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Setup gian hàng chuẩn SEO</a></li>
-
-                </ul> -->
+                    <li class="nav-item" href="#">Lên Shopee Mall</li>
+                    <li class="nav-item" href="#">Lên Lazada Mall</li>
+                    <li class="nav-item" href="#">Mở thông tin khách hàng Shopee</li>
+                    <li class="nav-item" href="#">Setup gian hàng chuẩn SEO</li>
             </div>
         </x-slot>
     </x-card>
